@@ -12,7 +12,7 @@ int x = int.Parse(Console.ReadLine()!);
 Console.WriteLine("Введите второе число:");
 int y = int.Parse(Console.ReadLine()!);
 int result = x % y; 
-if (x % y == 0)
+if (result == 0)
 {
     Console.WriteLine($"Число {x} кратно {y}");
 }
