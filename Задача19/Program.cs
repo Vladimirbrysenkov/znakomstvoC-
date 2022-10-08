@@ -17,9 +17,9 @@ while (n > 0)
 }
 if (temp == rev)
 {
-    Console.Write("Это палиндром!");
+    Console.Write("Это число палиндром!");
 }
 else
 {
-    Console.Write("Это не палиндром!");
+    Console.Write("Это число палиндром!");
 }
