@@ -3,14 +3,17 @@
 // 452 -> 11
 // 82 -> 10
 // 9012 -> 12
-
+Console.Clear();
 Console.WriteLine("Введите число");
-int i = int.Parse(Console.ReadLine()!);
-int sum = 0;
-while (i > 0)
+int N = int.Parse(Console.ReadLine()!);
+int Summ(int n)
 {
-int number = i % 10;
-i = i / 10;
-sum = sum + number;
+    int res = 0;
+    while (n > 0)
+    {
+        res = res + (n % 10);
+        n = n / 10;
+    }
+    return res;
 }
-Console.WriteLine("Cумма всех цифр в числе равна: " + sum);
+Console.WriteLine($"Cумма всех цифр числа {N} равна {Summ(N)}.");
