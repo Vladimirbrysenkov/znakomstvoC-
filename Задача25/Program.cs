@@ -10,9 +10,22 @@ int a = int.Parse(Console.ReadLine()!);
 Console.Write("Введите B: ");
 int b = int.Parse(Console.ReadLine()!);
 
-int st = a;
-for (int i = 1; i < b; i++)
+// int st = a;
+// for (int i = 1; i < b; i++)
+//{
+//st = st * a;
+//
+//}
+int GetPow(int A, int B)
 {
-st = st * a;
+    int pow = 1;
+    int i = 0;
+    while (i < B)
+    {
+        pow = pow * A;
+        i = i + 1;
+    }
+    return pow;
 }
-Console.WriteLine("A в степени B равно : " + st);
+Console.Write ("А в степени B равно: ");
+Console.WriteLine(GetPow(a, b));
