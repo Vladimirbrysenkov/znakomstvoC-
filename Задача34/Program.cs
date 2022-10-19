@@ -11,7 +11,7 @@ int[] NewArray(int size)
     }
     return array;
 }
-void EvenNum(int[] array)
+int EvenNum(int[] array)
 {
     int even = 0;
     for (int i = 0; i < array.Length; i++)
@@ -21,10 +21,11 @@ void EvenNum(int[] array)
             even++;
         }
     }
-    Console.WriteLine($"Количество четных элментов в массиве: {even}");
+    return even;
 }
 System.Console.WriteLine("Введите длину массива: ");
 int n = int.Parse(Console.ReadLine()!);
 int[] arr = NewArray(n);
 EvenNum(arr);
+Console.WriteLine($"Количество четных элментов в массиве: {EvenNum(arr)}");
 Console.WriteLine(String.Join(",", arr));
