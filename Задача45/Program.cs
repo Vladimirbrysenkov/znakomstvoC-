@@ -15,6 +15,7 @@ int[] GetArrayFromString(string stringArray)
 }
 int[] NewArray2(int[] inArray)
 {
+    
     int[] result = new int[inArray.Length];
 
     for (int i = 0; i < inArray.Length; i++)
