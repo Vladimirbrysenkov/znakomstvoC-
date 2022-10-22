@@ -35,14 +35,12 @@ void PrintArray(int[,] inArray)
 }
 void GetSqrElements(int[,] inArray)
 {
-    for (int i = 0; i < inArray.GetLength(0); i++)
+    for (int i = 0; i < inArray.GetLength(0); i += 2)
     {
-        for (int j = 0; j < inArray.GetLength(1); j++)
+        for (int j = 0; j < inArray.GetLength(1); j += 2)
         {
-            if (i % 2 == 0 && j % 2 == 0) inArray[i, j] = inArray[i, j] * inArray[i, j];
-            Console.Write($"{inArray[i, j]}\t ");
+            inArray[i, j] *= inArray[i, j];
         }
-        Console.WriteLine();
     }
 }
 Console.Clear();
@@ -55,3 +53,4 @@ int[,] array = GetArray(row, columns);
 PrintArray(array);
 Console.WriteLine();
 GetSqrElements(array);
+PrintArray(array);
