@@ -9,7 +9,6 @@
 // 8 7,8 -7,1 9
 
 
-
 Console.WriteLine("Задайте количество строк двумерного массива:");
 int m = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Задайте количество столбцов двумерного массива:");
